@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class diagInfPrincipal{
+public class DiagSupSec{
 	
     public static void main(String[] args) throws IOException {
         Scanner leitor = new Scanner(System.in);
@@ -9,15 +9,15 @@ public class diagInfPrincipal{
         char O = leitor.next().toUpperCase().charAt(0);
         double[][] M = new double[12][12];
         int i, j;
-        for (i=0; i<12; i++) {
-        	for (j=0; j<12; j++) {
+        for (i=0; i<M[0].length; i++) {
+        	for (j=0; j<M[0].length; j++) {
         		M[i][j] = leitor.nextDouble();
         	}
         }
         
-        for (i=0; i<12; i++) {
-        	for (j=0; j<12; j++) {
-        		if (j < i) soma += M[i][j];
+        for (i=0; i<M[0].length; i++) {
+        	for (j=0; j<M[0].length; j++) {
+        		if (j < M[0].length - i - 1) soma += M[i][j];
         	}
         }
 
