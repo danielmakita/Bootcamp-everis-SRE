@@ -17,5 +17,5 @@ Após executar o comando acima, basta apenas abrir o seguinte endereço e visual
 http://localhost:8080/api/v1/people
 ```
 
-<item> Maven 3.8.2 </item>
-<item> Openjdk 11.0.11 </item>
+Para o acompanhamento da aula e prática, foram utilizados o Maven na versão 3.8.2 e Openjdk 11.0.11.
+
